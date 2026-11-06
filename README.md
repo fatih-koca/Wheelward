@@ -25,7 +25,7 @@ macOS uses a single Natural scrolling setting for both the trackpad and the mous
 ./build.sh install
 ```
 
-This runs the tests, builds the app, copies it to `/Applications/Wheelward.app` and starts it. On first launch, turn on Wheelward in System Settings > Privacy & Security > Accessibility.
+This runs the tests, builds the app, copies it to `/Applications/Wheelward.app` and starts it. On first launch, turn on Wheelward in System Settings > Privacy & Security > Accessibility. On macOS 27 this list is called Device Control and Data Access.
 
 macOS ties the Accessibility permission to the code signature. To keep the permission across rebuilds, sign with your own certificate. Put its name in a `signing.local` file, which git ignores, or pass it at build time:
 
@@ -50,7 +50,7 @@ The menu is in Turkish for now:
 
 1. In the menu, turn off **Girişte Başlat**, then choose **Çık**.
 2. Move `/Applications/Wheelward.app` to the Trash.
-3. Remove the entry from System Settings > Privacy & Security > Accessibility.
+3. Remove the entry from System Settings > Privacy & Security > Accessibility (Device Control and Data Access on macOS 27).
 
 ## License
 
@@ -69,7 +69,7 @@ Fare tekerleğini Windows yönünde çalıştırır: tekerleği kendine doğru �
 - **Girişte Başlat:** Mac açıldığında aracın kendiliğinden başlamasını sağlar.
 - **Çık:** Aracı kapatır. Tekerlek Mac'in varsayılan yönüne döner.
 
-Araç çalışmak için Erişilebilirlik izni ister: Sistem Ayarları > Gizlilik ve Güvenlik > Erişilebilirlik.
+Araç çalışmak için Erişilebilirlik izni ister: Sistem Ayarları > Gizlilik ve Güvenlik > Erişilebilirlik. macOS 27'de bu listenin adı Aygıt Denetimi ve Veri Erişimi.
 
 ### Nasıl çalışır
 
@@ -90,4 +90,4 @@ Testleri çalıştırır, uygulamayı derler, `/Applications` klasörüne kurar 
 
 1. Menüden **Girişte Başlat** işaretini kaldır, sonra **Çık**'a bas.
 2. `/Applications/Wheelward.app` dosyasını Çöp Sepeti'ne at.
-3. Sistem Ayarları > Gizlilik ve Güvenlik > Erişilebilirlik listesinden kaydı sil.
+3. Sistem Ayarları > Gizlilik ve Güvenlik > Erişilebilirlik listesinden (macOS 27'de Aygıt Denetimi ve Veri Erişimi) kaydı sil.
